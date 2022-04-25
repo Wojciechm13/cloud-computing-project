@@ -4,6 +4,6 @@ WORKDIR /usr/src/app
 EXPOSE 3000 
 COPY src/ . 
 RUN ls -la /usr/src/app/* 
-RUN npm install 
+RUN npm install express mongoose amqplib 
 CMD [ "node", "test.js" ]
 
